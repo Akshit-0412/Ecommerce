@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container h1 {
+            font-size: 40px;
+        }
+
+        .product-title {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .product-title input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        .description {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .description input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        .producct-category {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .producct-category select {
+            padding: 10px;
+            width: 323px;
+            font-size: 20px;
+        }
+
+        .product_image {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .price {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .price input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        .sub-btn {
+            display: block;
+            width: 323px;
+            height: 50px;
+            margin: auto;
+            margin-top: 20px;
+            cursor: pointer;
+            outline: 0;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            background-color: transparent;
+            border: 2px solid transparent;
+            padding: 6px 12px;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            color: rgb(31, 30, 30);
+            border-color: rgb(31, 30, 30);
+        }
+
+        .sub-btn:hover {
+            color: #fff;
+            background-color: rgb(31, 30, 30);
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            <h1>Insert Product</h1>
+            <div class="product-title">
+                <label for="product-title">Product Title</label><br>
+                <input type="text" name="product-title" id="" placeholder="Enter product title" required>
+            </div>
+            <div class="description">
+                <label for="desc">Product Description</label><br>
+                <input type="text" name="desc" id="" placeholder="Enter product Description" required>
+            </div>
+            <div class="producct-category">
+                <select name="product_category" id="">
+                    <option value="">Select a category</option>
+                    <option value="">Category 1</option>
+                    <option value="">Category 2</option>
+                    <option value="">Category 3</option>
+                    <option value="">Category 4</option>
+                </select>
+            </div>
+            <div class="product_image">
+                <label for="product_image">Product Image</label><br>
+                <input type="file" name="product_image" id="" required>
+            </div>
+            <div class="price">
+                <label for="price">Product Price</label><br>
+                <input type="text" name="price" id="" placeholder="Enter product Price" required>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Submit" class="sub-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
